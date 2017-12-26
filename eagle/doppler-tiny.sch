@@ -12432,6 +12432,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP13" library="pinhead" deviceset="PINHD-1X1" device="" value="STRAP"/>
 <part name="JP14" library="pinhead" deviceset="PINHD-1X1" device="" value="STRAP"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="" value=""/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="JP15" library="pinhead" deviceset="PINHD-1X1" device="" value="STRAP"/>
+<part name="JP16" library="pinhead" deviceset="PINHD-1X1" device="" value="STRAP"/>
 </parts>
 <sheets>
 <sheet>
@@ -12519,6 +12522,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP13" gate="G$1" x="241.3" y="144.78" rot="R180"/>
 <instance part="JP14" gate="G$1" x="241.3" y="154.94" rot="R180"/>
 <instance part="SJ1" gate="G$1" x="25.4" y="134.62"/>
+<instance part="GND28" gate="1" x="236.22" y="137.16"/>
+<instance part="JP15" gate="G$1" x="228.6" y="144.78" rot="R180"/>
+<instance part="JP16" gate="G$1" x="228.6" y="154.94" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -12701,6 +12707,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="243.84" y1="154.94" x2="248.92" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="154.94" x2="248.92" y2="144.78" width="0.1524" layer="91"/>
 <junction x="248.92" y="144.78"/>
+</segment>
+<segment>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="231.14" y1="144.78" x2="236.22" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="144.78" x2="236.22" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="JP15" gate="G$1" pin="1"/>
+<pinref part="JP16" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="154.94" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="154.94" x2="236.22" y2="144.78" width="0.1524" layer="91"/>
+<junction x="236.22" y="144.78"/>
 </segment>
 </net>
 <net name="SCL" class="0">
