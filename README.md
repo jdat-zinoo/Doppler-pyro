@@ -1,2 +1,2 @@
 # Doppler-tiny
-Tiny pyro eject control and transmitter.
+Atmega pyro eject control with supercap and doppler transmitter.
