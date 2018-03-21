@@ -273,8 +273,8 @@ void initRadio(){
   
 
   // +/- deviation freq = 61*register (6*61=366Hz, RTTY FSK shift=732 hz
-  //radio.writeReg(REG_FDEVMSB,0);
-  //radio.writeReg(REG_FDEVLSB,6);      
+  radio.writeReg(REG_FDEVMSB,0);
+  radio.writeReg(REG_FDEVLSB,6);      
 
   //radio.writeReg(REG_PARAMP,0);
   radio.writeReg(REG_PARAMP,0b1111);
